@@ -208,7 +208,7 @@ gsap.to("#fstar", {
 //say_text button
 let say_text = gsap.timeline();
 ScrollTrigger.create({
-  animation: scene3,
+  animation: say_text,
   trigger: ".scrollElement",
   start: "80% 50%",
   end: "bottom 100%",
