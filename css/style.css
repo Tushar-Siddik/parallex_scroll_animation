@@ -50,3 +50,27 @@ svg {
       background: #ffffff;
       color: #1B1734;
   }
+
+  .say_text{
+    position: fixed;
+    bottom: 10%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    border: 3px dashed #fff;
+    border-radius: 15px;
+    font-size: 2rem;
+    padding: 0.7rem 0.7em;
+    background-color: black;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 11;
+}
+
+.say_text:hover {
+    border: 3px dashed #1B1734;
+    background: #ffffff;
+    color: #1B1734;
+}
