@@ -25,10 +25,6 @@ scene1.to("#h1-9", { y: 3.5 * speed, x: -0.2 * speed }, 0);
 //animate text
 scene1.to("#info", { y: 8 * speed }, 0);
 
-//say_text
-//scene1.to("#say_text", { y: 1 * speed }, 0);
-
-
 
 /*   Bird   */
 gsap.fromTo("#bird", { opacity: 1 }, {
@@ -189,8 +185,7 @@ scene3.fromTo("#arrow2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.25);
 scene3.fromTo("#text2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.3);
 
 //say_text2
-scene3.fromTo("#say_text2", { opacity: 0.8, x: 40 }, { opacity: 1, y: -300 }, 0.3);
-
+//scene3.fromTo("#say_text2", { opacity: 0.8, x: 40 }, { opacity: 1, y: -300 }, 0.3);
 
 //gradient value change
 scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0);
@@ -210,8 +205,16 @@ gsap.to("#fstar", {
     onEnter: function () {gsap.set("#fstar", { opacity: 1 });},
     onLeave: function () {gsap.set("#fstar", { opacity: 0 });} } });
 
+//say_text button
+let say_text = gsap.timeline();
+ScrollTrigger.create({
+  animation: scene3,
+  trigger: ".scrollElement",
+  start: "80% 50%",
+  end: "bottom 100%",
+  scrub: 3 });
 
-
+say_text.fromTo("#say_text", { opacity: 0.5 }, { opacity: 0.7, y: -710 }, 0);
 
 //reset scrollbar position after refresh
 window.onbeforeunload = function () {
