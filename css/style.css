@@ -53,12 +53,12 @@ svg {
 
   .say_text{
     position: fixed;
-    bottom: 15%;
+    bottom: 10%;
     margin-left: 50%;
     transform: translateX(-50%);
     border: 3px dashed #fff;
     border-radius: 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0.7rem 0.7em;
     background-color: black;
     color: #ffffff;
