@@ -53,7 +53,7 @@ svg {
 
   .say_text{
     position: fixed;
-    bottom: 10%;
+    bottom: 15%;
     margin-left: 50%;
     transform: translateX(-50%);
     border: 3px dashed #fff;
