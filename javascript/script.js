@@ -214,7 +214,7 @@ ScrollTrigger.create({
   end: "bottom 100%",
   scrub: 3 });
 
-say_text.fromTo("#say_text", { opacity: 0.5 }, { opacity: 0.7, y: -510 }, 0);
+say_text.fromTo("#say_text", { opacity: 0.5 }, { opacity: 0.7, y: -300 }, 0);
 
 //reset scrollbar position after refresh
 window.onbeforeunload = function () {
